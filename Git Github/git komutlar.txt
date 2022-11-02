@@ -1,0 +1,168 @@
+Abdullah hoca ders tekrarı kmomutlar;
+
+pwd
+
+mkdir dosya-ismi
+
+git init
+
+git config --global init.defaultbranch <newbrancname> main için default
+
+$ git config --list
+
+$ git config --global --list
+
+$ git remote -v (uzak repo bağlantısı var mı?)
+
+ayarlardan --> file exclude 'dan (**/.git) bunu silersek artık vs da görünür. 
+
+cd enter ls -a yapıp  .gitconfig dosyasına cat ile bakıp ayarlara bakabiliriz
+
+cd - (tire)komutu ile bir önceki dizine direk geçiş yapabiliriz..
+
+
+
+$ git remote add origin https://github.com/SkyCooper/replay.git  
+(uzak repoda bağlantı kurmak için, önce githubda repo oluşturup onun URLni alıyoruz.)
+
+touch index.html -- dosya oluşturuldu
+
+$ git add .  staging areaya ekledik
+
+$ git commit -m "index oluşturuldu"
+
+$ git status  durumu kontrol ettik
+
+--- alias verme---
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status 
+
+$ git commit --amend -m "mesaj değiştirildi" commit değiştirme
+
+$ git log     commit ıd ve bilgilerine bakma
+git log --pretty=oneline
+git log --oneline
+
+$ git commit -am "add yapmadan direk comit index eklendi"
+
+$ git checkout 493d6cfcf658483893882498949672c5dfdf9c50   eski veriyona döndük
+
+$ git checkout main    tekrar maine döndük
+
+$ git pull --rebase origin main  eğer ilk push hata verirse önce bu komut
+
+sonra; git push --set-upstream origin main     ile push yapıyoruz
+
+ilave değişikliklerden ve add commit yaptıktan sonra sadece git push çalışır.
+
+$ rm -rf .git/   ile remote bağlantısı kesildi
+
+
+---KLONLANMA---
+önce githubda (remote da) repo oluşturduk
+
+$ git clone https://github.com/SkyCooper/replay2.git .
+buradaki nokta ile bulunduğumuz konuma klasör oluşturmadan 
+klaonlanan dosyaiçeriğini klonlar
+
+$ git branch    mevcut branch bakma
+
+$ git branch versiyon1   yeni branck oldu
+
+$ git co versiyon1     branch değişti
+
+$ git co main     maine geçtik
+$ git merge versiyon1     versiyon1deki değişiklikleri birleştirdik.
+
+$ git push   ile localde yapılan değişiklikler remote aktarıldı.
+
+
+--- REMOTE YAPILAN DEĞİŞİKLİĞİ LOCALA ALMA---
+$ git fetch       yapılan değişikliği aldım
+$ git diff main origin/main    yapılan değişliklere baktım
+$ git merge origin/main    değişiklikleri ekledim  
+
+
+$ git pull    remote tekrar değişiklik yapıp locala aldım.
+sadece tek komutla (fetch - merge) beraber yaptı pull komutu
+
+$ git br -m newfeature1 (versiyon1 olan isim değişti)
+
+$ git br -d newfeature1 (branch silindi, ama önce maine geçildi)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
